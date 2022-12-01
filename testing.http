@@ -1,0 +1,28 @@
+GET http://localhost:3000/players/
+###
+
+POST http://localhost:3000/players/
+Content-Type: application/json
+
+{
+  "playerName": "Yuvraj Singh",
+  "jerseyNumber": 12,
+  "role": "All-rounder"
+}
+
+###
+
+GET http://localhost:3000/players/1/
+###
+
+PUT http://localhost:3000/players/1/
+Content-Type: application/json
+
+{
+  "playerName": "Teju",
+  "jerseyNumber": 3,
+  "role": "All-rounder" 
+}
+###
+
+DELETE http://localhost:3000/players/15/
